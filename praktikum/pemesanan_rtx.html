@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pemesanan</title>
+</head>
+<body style="background-color: lightsteelblue;">
+    <nav style="display: flex;
+    border: solid black 2px;
+    padding: 5px;background-color: white;
+    flex-direction: row; justify-content: space-between; margin: 30px;">
+        <a href="#"><div class="item">Home</div></a>
+        <a href="#"><div class="item">Generate Link</div></a>
+        <a href="#"><div class="item">Transaction History</div></a>
+        <a href="#"><div class="item">Policy</div></a>
+        <a href="#"><div class="item">Logout</div></a>   
+    </nav>
+    <form action="pemesanan_sukses.html" method="post">
+        <div style="display: flex;">
+            <div style="margin: 30px;">
+                <img style="border-radius: 3px;border: 2px solid black;" src="asset\rtx.jpeg" width="200px" alt="">
+                <br>
+                <input style="border-radius: 3px;border: 2px solid black;"type="image" name="" id=" " value="Upload Picture">
+            </div>
+            <div style="margin: 30px;">
+                <table>
+                    <tr>
+                        <td>Nama Barang</td>
+                        <td><input style="border-radius: 3px;border: 2px solid black;" type="text" name="" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td>Deskripsi</td>
+                        <td>
+                            <textarea style="border-radius: 3px;border: 2px solid black;width: 100%;" name="" id="" cols="30" rows="3">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Akun</td>
+                        <td style="color: crimson;"><input placeholder="xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}" style="border-radius: 3px;border: 2px solid black;" type="tel" name="" id="no_akun"><br>
+                        *format nomor: 1234-5678</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bank
+                        </td>
+                        <td>
+                            <select style="border-radius: 3px;border: 2px solid black" name="" id="">
+                                <option value="Mandiri">Mandiri</option>
+                                <option value="BTN">BTN</option>
+                                <option value="BNI">BNI</option>
+                                <option value="BRI">BRI</option>
+                                <option value="BCA">BCA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transaksi</td>
+                        <td>
+                            <input style="border-radius: 3px;border: 2px solid black;width: 40px;" list="data_l" type="text" name="" id="data_1">
+                            <datalist style="width: 20px;" id="data_l">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <label for="data_1">*jika transaksi untuk 3 orang, pilih 3 orang dari list dropdown</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telp">Kirim ke Nomor Telp</label></td>
+                        <td><input placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" style="border-radius: 3px;border: 2px solid black;"type="tel" id="telp"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Kirim ke Email</label>
+                        </td>
+                        <td><input style="border-radius: 3px;border: 2px solid black;"type="email" id="email"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p align="center">
+            <button style="background-color: forestgreen; cursor: pointer;
+            border: 2px solid black; color: white;border-radius: 3px;
+            ">Buat Barang</button>
+        </p>
+    </form>
+</body>
+</html>

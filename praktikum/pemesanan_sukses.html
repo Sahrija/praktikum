@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pemesanan Sukses</title>
+</head>
+<body style="background-color: lightsteelblue;">
+    <nav style="display: flex;
+    border: solid black 2px;
+    padding: 5px;background-color: white;
+    flex-direction: row; justify-content: space-between; margin: 30px;">
+        <a href="#"><div class="item">Home</div></a>
+        <a href="#"><div class="item">Register</div></a>
+        <a href="#"><div class="item">Policy</div></a>
+        <a href="#"><div class="item">About</div></a>   
+    </nav>
+    <form action="done.html" method="post">
+        <div style="display: flex;">
+            <div style="margin: 30px;">
+                <img style="border-radius: 3px;border: 2px solid black;" src="asset\rtx.jpeg" width="200px" alt="">
+                <br>
+                <input style="border-radius: 3px;border: 2px solid black;"type="image" name="" id="">
+            </div>
+            <div style="margin: 30px;">
+                <table style="border-spacing: 0;">
+                    <tr>
+                        <td>Nama Barang</td>
+                        <td>
+                            VGA ZOTAG RTX 3050 Twin Edge
+                        </td>
+                    </tr>
+                    <tr bgcolor="#8a94bf">
+                        <td>Deskripsi</td>
+                        <td style="padding: 10px;">
+                            Merek: GEFORCE
+                            <br><br>
+                            Ram: 8Gb
+                            <br><br>
+                            Kondisi: Baru
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Harga</td>
+                        <td>Rp. 5.059.000</td>
+                    </tr>
+                    <tr>
+                        <td>Bayar ke</td>
+                        <td>
+                            123-456-789-0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tipe Pembayaran</td>
+                        <td>
+                            <select style="border-radius: 3px;border: 2px solid black" name="" id="">
+                                <option value="Mandiri">Mandiri</option>
+                                <option value="BTN">BTN</option>
+                                <option value="BNI">BNI</option>
+                                <option value="BRI">BRI</option>
+                                <option value="BCA">BCA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <label class="check" style="cursor: pointer;color: green;">
+                                <input class="check" style="cursor: pointer;
+                                accent-color: green;"
+                                 type="checkbox" name="" id="telepon">
+                                Kirim ke Nomor Telepon
+                            </label>
+                            <br>
+                            <label style="cursor: pointer;color: green;">
+                                <input style="cursor: pointer;accent-color: green;" type="checkbox" name="" id="">
+                                Email saya salinan pembelian
+                            </label>
+                    </tr>
+                    <tr>
+                        <td>Pemegang Akun</td>
+                        <td><input placeholder="Nama Disini" style="border-radius: 3px;border: 2px solid black;" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="no_akun">Nomor Akun</label></td>
+                        <td style="color: crimson;">
+                            <input placeholder="xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}" style="border-radius: 3px;border: 2px solid black;" type="tel" name="" id="no_akun"><br>
+                            *format nomor 1234-5678
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telp">Kirim ke Nomor Telp</label></td>
+                        <td><input placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" style="border-radius: 3px;border: 2px solid black;"type="tel" id="telp" checked></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Kirim ke Email</label>
+                        </td>
+                        <td><input style="border-radius: 3px;border: 2px solid black;"type="email" id="email" checked></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p align="center">
+            <button style="background-color: forestgreen;cursor: pointer;
+            border: 2px solid black; color: white;border-radius: 3px;
+            ">Jual Barang!</button>
+        </p>
+    </form>
+</body>
+</html>
