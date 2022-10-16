@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .item{
+            background-color: lightgreen;
+            padding: 3px;
+            border-radius: 3px;
+            font-weight: 900;
+            color: darkolivegreen;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav style="display: flex;
+     flex-direction: row; justify-content: space-between; padding: 30px;border: solid lightseagreen 3px;background-color: aquamarine; border-radius: 5px 30px 5px 30px;">
+        <div class="item">Home</div>
+        <div class="item">Generate Link</div>
+        <div class="item">Transaction History</div>
+        <div class="item">Policy</div>
+        <div class="item">Logout</div>
+    </nav>
+    <form action="sukses_mim" method="post">
+        <div style="display: flex; flex-wrap: ;">
+            <div style="
+            background-color: bisque;
+            border: solid rgb(202, 108, 21);
+            border-left: 25px solid rgb(202, 108, 21);
+            padding: 15px;
+            width: 100%;
+            border-radius: 30px 0 0 30px;
+            ">
+                <img src="asset\Screenshot_20220415-124724~2.png" alt="mangsud">
+                <br>
+                <input type="submit" value="Upload Picture">
+                <button>
+                <input type="file" name="mim" id="mim">
+                </button>
+            </div>
+            <div style="
+            background-color: bisque;
+            border: solid rgb(202, 108, 21);
+            border-right: 25px solid rgb(202, 108, 21);
+            padding: 15px;
+            width: 100%;
+            border-radius: 0 30px 30px 0;
+            ">
+                <table>
+                    <tr>
+                        <td>Nama Mim</td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Deskripsi</td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="3">mangsud?
+                                apacoba?
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Akun</td>
+                        <td><input type="number" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Bank</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="Mandiri">Mandiri</option>
+                                <option value="Mandiri">Masih Sama Ortu</option>
+                                <option value="BTN">BTN</option>
+                                <option value="BNI">BNI</option>
+                                <option value="BRI">BRI</option>
+                                <option value="BCA">BCA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transaksi</td>
+                        <td><input placeholder="jumlah transaksi" type="number" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            *jika transaksi untuk 3 orang, pilih 3 orang dari list dropdown
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kirim ke Nomor Telp</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Kirim ke Email</td>
+                        <td><input type="email"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
