@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile</title>
+    <style>
+        .container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #media img {
+            width: 100px;
+        }
+
+        video {
+            width: 300px;
+            height: fit-content;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .files {
+            width: 15px;
+        }
+
+        nav {
+            padding: 25px;
+            background-color: cornflowerblue;
+        }
+
+        iframe,
+        video {
+            border-radius: 10px;
+        }
+
+        fieldset {
+            background-color: aliceblue;
+            border: solid;
+            border-radius: 0 20px 0 0;
+        }
+
+        .icon {
+            width: 30px;
+        }
+
+        .links {
+            background-color: white;
+            padding: 3px;
+            margin: 5px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        a {
+            color: cornflowerblue;
+        }
+
+        body {
+            color: white;
+            background-image: linear-gradient(#2f3152, #42c39c);
+        }
+
+        a.email {
+            color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="color" name="" id="">
+    <div style="padding: 20px;">
+        <div class="container">
+
+            <head>
+                <img src="asset/img/pochita.jpeg" alt="" width="300px" style="border: solid white;">
+                <div style="flex-grow: 1;margin-left: 20px;">
+                    <h1>PROFILE AHMAD SAHRIJA</h1>
+                    Gang Arus <br>
+                    Kp. Sawah <br>
+                    Jagaraksa, Jakarta Selatan <br>
+                    Email: <a class="email"
+                        href="https://accounts.google.com/SignOutOptions?hl=id&continue=https://mail.google.com&service=mail">ahmadsahrija@gmail.com</a><br>
+                    No hp: 08123456789
+                </div>
+            </head>
+            <nav>
+                Menu
+                <div class="links">
+                    <img class="icon" src="asset/img/youtube_logo.png" alt="">
+                    <a href="https://www.youtube.com/channel/UC0sSni2xVnrA3YMoc8mGf1g">YT</a>
+                </div>
+                <div class="links">
+                    <img class="icon" src="asset/img/gmail_icon.png" alt="">
+                    <a
+                        href="https://accounts.google.com/SignOutOptions?hl=id&continue=https://mail.google.com&service=mail">link</a>
+                </div>
+                <div class="links">
+                    <img class="icon" src="asset/img/Instagram_logo.png" alt="">
+                    <a href="https://www.instagram.com/aziznaengkong/?hl=id">link</a>
+                </div>
+            </nav>
+        </div>
+
+        <main>
+            <section>
+                <p>
+
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deleniti et sapiente modi
+                    tempore
+                    aliquid iusto voluptatum consectetur. Tenetur reprehenderit perspiciatis a sed error consectetur
+                    corporis
+                    autem, labore quisquam
+                    obcaecati ex. Cumque modi architecto officia porro quidem.
+                </p>
+            </section>
+            <object class="container" data="" type="">
+                <fieldset>
+                    <video controls src="asset/vid/video1.mp4"></video>
+                    <br>
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="300px" height="170px"
+                        type="text/html"
+                        src="https://www.youtube.com/embed/RumezJdB7wM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com">
+                        <div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode.com/de/</a></small>
+                        </div>
+                        <div><small><a
+                                    href="https://theimpossiblequiz.info/the-impossible-quiz-book/">theimpossiblequiz.info/the-impossible-quiz-book</a></small>
+                        </div>
+                        <div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode.com/pl/</a></small>
+                        </div>
+                        <div><small><a
+                                    href="https://mgacasinoutansvensklicens.se/">mgacasinoutansvensklicens.se</a></small>
+                        </div>
+                    </iframe>
+                </fieldset>
+
+                <fieldset style="width: fit-content;" id="media">
+                    <img src="asset/img/photo1.jpg" alt="">
+                    <img src="asset/img/photo2.jpg" alt="">
+                    <br>
+                    <img src="asset/img/photo1.jpg" alt="">
+                    <img src="asset/img/photo2.jpg" alt="">
+                </fieldset>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <img class="files" src="asset/img/pdf_icon.png" alt="">
+                            <a href="asset/docs/04_multimedia_html5.pdf" download="">Download Tugas</a>
+                        </li>
+                        <li>
+                            <img class="files" src="asset/img/jpeg_icon.png" alt="">
+                            <a target="frame_" href="asset/img/Screenshot (55).png">Screenshot</a>
+                        </li>
+                        <li>
+                            <img class="files" src="asset/img/pdf_icon.png" alt="">
+                            <a target="frame_" href="asset/docs/04_multimedia_html5.pdf">Tugas</a>
+                        </li>
+                        <li>
+                            <img class="files" src="asset/img/pdf_icon.png" alt="">
+                            <a target="frame_" href="asset/docs/2023.pdf">Sertifikat</a>
+                        </li>
+                    </ul>
+                    <iframe name="frame_" src="asset/docs/2023.pdf" frameborder="0"></iframe>
+                </fieldset>
+            </object>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

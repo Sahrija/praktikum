@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="script.js"></script>
+</head>
+
+<body style="display: flex;flex-direction: column; height: 10%;background-color: bisque;">
+	<header class="boxes" style="background-color:gold; border: 2px solid orangered;">
+		<p>header</p>
+	</header>
+	<nav class="boxes" style="background-color: greenyellow; border: 2px solid orangered;margin: 10px 0   10px 0;">
+		<p>nav</p>
+	</nav>
+	<main class="boxes" style="display: flex; flex-grow:0;">
+		<article class="boxes"
+			style="background-color: orangered; border: 2px solid orangered;flex-grow: 3; margin: 0 10px 0 0; padding: 0 0 20px 0;">
+			<p>article</p>
+			<section class="boxes"
+				style=" background-color: orange; border : 2px solid orangered; margin: 10px 5px 0 5px;">
+				<p>section</p>
+			</section>
+			<section id="box" class="boxes"
+				style=" background-color: orange; border: 2px solid orangered; margin: 10px 5px 0 5px;">
+				<p>section</p>
+			</section>
+			<section id="box" class="boxes"
+				style=" background-color: orange; border: 2px solid orangered; margin: 10px 5px 0 5px;">
+				<p>section</p>
+			</section>
+		</article>
+		<aside class="boxes" style=" background-color: cornflowerblue; border: 2px solid orangered;flex-grow: 1;">
+			<p>aside</p>
+		</aside>
+	</main>
+
+	<footer style="background-color: gold;border: 2px solid orangered; margin-top: 10px;">
+		<p>footer</p>
+		<input type="checkbox" name="switch" id="switch" onclick="change()">
+	</footer>
+</body>
+
+</html>
