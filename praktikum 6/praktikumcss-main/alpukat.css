@@ -1,11 +1,16 @@
 body {
     background-color: lightblue;
-    font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
+    margin-top: 0;
     text-align: center;
     color: blueviolet;
+}
+
+header {
+    background-color: palegreen;
 }
 
 p {
@@ -14,7 +19,7 @@ p {
 }
 
 .center {
-    width: 50%;
+    width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +45,7 @@ p {
 
 .cod {
     margin: auto;
-    width: 80%;
+    width: fit-content;
     background-color: rgb(124, 235, 142);
     color: blueviolet;
     border: goldenrod dashed 3px;
@@ -55,9 +60,6 @@ p {
     position: relative;
 }
 
-.cod {
-    right: 0;
-}
 
 /* table */
 
@@ -78,9 +80,11 @@ td {
     border: seagreen 2px solid;
 }
 
-td, th{
+td,
+th {
     padding: 5px;
 }
+
 tr:nth-child(even) {
     background-color: bisque;
 }
@@ -91,4 +95,75 @@ tr:nth-child(odd) {
 
 .harga {
     width: 130px;
+}
+
+/* khasiat */
+.khasiat {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    background-color: wheat;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-count: 2;
+    width: 100%;
+}
+
+.khasiat li {
+    background-color: teal;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 80px;
+}
+
+.khasiat span {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+/* jus */
+.jus {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jus img {
+    margin-right: 20px 0 0 0;
+    border: 5px dashed lightsalmon;
+    align-self: center;
+    justify-self: center;
+}
+
+.jus p {
+    max-width: 400px;
+    min-width: 300px;
+    margin: 20px;
+}
+
+/* combine */
+
+.bagian2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container {
+    flex-grow: 1;
+}
+/* button */
+button{
+    background-color: cadetblue;
+    padding: 3px;
+}
+.button{
+    display: flex;
+    justify-content: center;
 }
