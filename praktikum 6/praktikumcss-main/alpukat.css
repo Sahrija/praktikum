@@ -20,30 +20,75 @@ p {
     margin-right: auto;
 }
 
-.foto{
-    background-color: black;
-    width: 100%;
+.foto {
+    display: flex;
+    background-color: rgb(124, 235, 142);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 10px 10px slateblue;
     align-items: center;
-}
-.foto img {
-    width: 24%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
 }
 
-.cod{
+.foto img {
+    max-width: 24%;
+    min-width: 200px;
+    align-self: center;
+    margin: 5px;
+}
+
+.cod {
     margin: auto;
     width: 80%;
-}
-
-.cod p{
-    background-color: aqua;
+    background-color: rgb(124, 235, 142);
     color: blueviolet;
-    border: red dotted 3px;
+    border: goldenrod dashed 3px;
     text-align: center;
     font-weight: bolder;
     padding: 5px;
 }
 
-.promo{
+.promo {
     text-align: center;
     color: red;
+    position: relative;
+}
+
+.cod {
+    right: 0;
+}
+
+/* table */
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    color: saddlebrown;
+    font-weight: 800;
+}
+
+th {
+    background-color: seagreen;
+    color: white;
+    border: seagreen 2px solid;
+}
+
+td {
+    border: seagreen 2px solid;
+}
+
+td, th{
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color: bisque;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.harga {
+    width: 130px;
 }

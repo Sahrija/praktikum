@@ -32,7 +32,8 @@ p {
     justify-content: center;
     flex-wrap: wrap;
 }
-.gambar img{
+
+.gambar img {
     width: 300px;
     align-self: center;
     display: block;
@@ -62,10 +63,12 @@ p {
     font-size: 50px;
     color: slateblue;
 }
-h3{
+
+h3 {
     color: gold;
     background-color: purple;
 }
+
 .promo {
     color: rebeccapurple;
     border: 5px black dashed;
@@ -73,17 +76,21 @@ h3{
     text-align: center;
     padding: 20px;
 }
-.promo ol, .promo h4{
+
+.promo ol,
+.promo h4 {
     text-align: left;
 }
+
 /* nav */
 
-.nav-bar{
+.nav-bar {
     background-color: saddlebrown;
-    display: flex;
 }
-.nav-bar a{
+
+.nav-bar li {
     margin: 20px;
+    display: inline;
 }
 
 /* fixed nav */
@@ -96,11 +103,10 @@ h3{
     width: 50px;
     height: 50px;
     opacity: 0.5;
-    background-color: tan;
-
+    background-color: gold;
 }
 
-.nav-menu ul{
+.nav-menu ul {
     list-style-type: none;
     padding: 0;
     letter-spacing: 2px;
@@ -111,7 +117,8 @@ h3{
     flex-direction: column;
     width: 100px;
 }
-.fixed-nav:hover .navbtn button{
+
+.fixed-nav:hover .navbtn button {
     opacity: 1;
     width: 100%;
 }
@@ -123,8 +130,9 @@ h3{
     display: none;
 }
 
-.nav-menu a, .nav-bar a {
-    font-size:20px;
+.nav-menu a,
+.nav-bar a {
+    font-size: 20px;
     color: white;
     text-decoration: none;
     background-color: saddlebrown;
@@ -132,4 +140,3 @@ h3{
     padding: 3px;
     width: 100px;
 }
-

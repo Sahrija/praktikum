@@ -1,0 +1,33 @@
+/* table */
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    color: saddlebrown;
+    font-weight: 800;
+}
+
+th {
+    background-color: seagreen;
+    color: white;
+    border: seagreen 2px solid;
+}
+
+td {
+    border: seagreen 2px solid;
+}
+
+td, th{
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color: bisque;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.harga {
+    width: 130px;
+}
