@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 90vh ;
+    background-color: antiquewhite;
+}
+.item{
+    background-color: red;
+    width: 100%;
+    margin: 10px;
+}
+/* warna box */
+.item-1{
+    background-color: khaki;
+}
+.item-2{
+    background-color: coral;
+}
+.item-3{
+    background-color: yellowgreen;
+}
+.item-4{
+    background-color: skyblue;
+}

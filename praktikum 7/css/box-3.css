@@ -1,0 +1,48 @@
+.item {
+    background-color: red;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+#main {
+    height: 100%;
+}
+/* baris 1*/
+.yellow{
+    background-color: khaki;
+    flex-grow: 1;
+}
+.red{
+    background-color: coral;
+    flex-grow: 4;
+}
+/* baris 2 */
+.green{
+    background-color: chartreuse;
+    flex-grow: 1;
+}
+.gray{
+    background-color: gainsboro;
+    flex-grow: 3;
+}
+.light-blue{
+    background-color: lightblue;
+    flex-grow: 1;
+}
+/* baris 3 */
+.blue{
+    background-color: darkslateblue;
+}
+
+#header{
+    height: 20%;
+}
+#content{
+    height:60%;
+}
+#footer{
+    height:20% ;
+}
