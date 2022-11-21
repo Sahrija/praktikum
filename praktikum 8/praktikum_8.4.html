@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-row {
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            background-color: pink;
+            height: 100vh;
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+
+        .container-col {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            flex-grow: 4;
+        }
+
+        .header,
+        .footer {
+            flex-grow: 1;
+            width: 100%;
+            background-color: greenyellow;
+        }
+
+        .container-row.section {
+            height: auto;
+            flex-grow: 4;
+        }
+
+        .article{
+            background-color: lavender;
+            flex-grow: 4;
+        }
+        .aside{
+            background-color: cornflowerblue;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-row">
+        <div class="nav">Nav</div>
+        <div class="container-col">
+            <div class="header">Header</div>
+            <div class="container-row section">
+                <div class="article">Article</div>
+                <div class="aside">Aside</div>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
