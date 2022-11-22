@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+header,
+footer {
+    background-color: gold;
+    width: 100%;
+    height: 100px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+article{
+    background-color: aliceblue;
+    flex-grow: 3;
+}
+aside{
+    background-color: pink;
+    flex-grow: 1;
+}
+nav{
+    background-color: lightblue;
+    flex-grow: 1;
+}
+main *{
+    box-sizing: border-box;
+    padding: 20px;
+}
