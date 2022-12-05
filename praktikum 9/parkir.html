@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parkir</title>
+  </head>
+  <body>
+    <h1>menghitung biaya parkir</h1>
+
+    <label for="masuk">Jam Masuk</label>
+    <input type="number" name="" id="masuk" onchange="calc()" />
+
+    <br />+<br />
+
+    <label for="keluar">Jam Keluar</label>
+    <input type="number" name="" id="keluar" onchange="calc()" />
+
+    <br />=<br />
+
+    Lama Jam
+    <span id="durasi"> </span>
+    <br />
+    Total Bayar
+    <input type="number" name="" id="hasil" />
+
+    <script>
+      function calc() {
+        var masuk = Number(document.getElementById("masuk").value);
+        var keluar = Number(document.getElementById("keluar").value);
+        let hasil = document.getElementById("hasil");
+        let lama_jam = keluar - masuk;
+        let durasi = document.getElementById("durasi")
+        durasi.innerHTML = lama_jam
+        if (lama_jam >= 2) {
+          hasil.value = (keluar - masuk - 2) * 1000 + 3000;
+        } else {
+          hasil.value = 3000;
+        }
+      }
+    </script>
+  </body>
+</html>
