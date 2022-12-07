@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What'sGoing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat" id="msg-user">
+        </div>
+        <div class="message">
+            <input autofocus onblur="this.focus()" type="text" class="inp" id="inp-chat">
+            <button onclick="chat()">Kirim</button>
+        </div>
+    </div>
+    <script>
+        function chat() {
+            let chat_inp = document.getElementById("inp-chat").value;
+            if (chat_inp != "") {
+                
+                var time = new Date();
+                let seconds = time.getSeconds();
+                let minutes = time.getMinutes();
+                let hours = time.getHours();
+                let text = document.createTextNode(chat_inp);
+                var element = document.createElement("div");
+                
+                
+                var date_label = document.createElement("span");
+
+                date_label.innerHTML = hours+":"+minutes;
+                element.appendChild(text);
+                element.appendChild(date_label);
+
+                parent = document.getElementById("msg-user");
+                parent.appendChild(element);
+                parent.classList.add("msg-box");
+
+                document.getElementById("inp-chat").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

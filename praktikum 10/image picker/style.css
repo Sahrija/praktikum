@@ -1,0 +1,99 @@
+:root {
+    --shadow: #8495b7a6;
+    --accent: #beceed;
+    --darkAccent: #323c95;
+    --sspx: 2px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: space-between;
+    border: solid white 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 var(--shadow);
+}
+
+/* header */
+h1{
+    position: relative;
+}
+h1 span{
+    position: relative;
+    background-color: var(--accent);
+    padding-right: 10px;
+    color: var(--darkAccent);
+    border-radius: 10px;
+    border: var(--darkAccent) 3px solid;
+    box-shadow: 0 0 0 4px rgb(233, 235, 242);
+}
+
+.logo {
+    position: inherit;
+    bottom: -40px;
+    left: 40px;
+    z-index: -1;
+}
+
+/* header end */
+
+
+#img-picker {
+    background-color: aliceblue;
+    color: var(--darkAccent);
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+#img-picker:hover {
+    background-color: var(--darkAccent);
+    color: white;
+}
+
+#img-picker option:hover {
+    accent-color: lightblue;
+    background-color: lightblue;
+    color: white;
+}
+
+#none {
+    color: #b8b8b8;
+}
+
+/* picker end */
+
+/* image start */
+#image {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    background-image: url(img/icons8-medium-icons-100.png);
+    background-size: cover;
+    border-radius: 5px;
+    border: solid 5px white;
+    border-bottom: var(--shadow) solid 5px;
+    border-right: var(--shadow) solid 5px;
+    transition: 0.5s;
+}
+
+#image:hover {
+    border: solid 5px white;
+    border-top: var(--shadow) solid 5px;
+    border-left: var(--shadow) solid 5px;
+    transition: 0.5s;
+}

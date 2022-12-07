@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image PicKER</title>
+    <link rel="shortcut icon" href="img/icons8-image-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><img class="logo" src="img/icons8-image-100.png" alt=""><span> Image Picker</span></h1>
+    <div class="container">
+        <div class="picker">
+            <select onchange="change()" name="image" id="img-picker">
+                <option id="none" value="none">--pilih gambar--</option>
+                <option value="gambar1">Kepiting</option>
+                <option value="gambar2">Kucing</option>
+                <option value="gambar3">Ayam</option>
+                <option value="gambar4">Beruang</option>
+                <option value="gambar5">Gajah</option>
+                <option value="gambar6">Gorila</option>
+                <option value="gambar7">Kawaii Dino :3</option>
+                <option value="gambar8">Singa</option>
+                <option value="gambar9">Panda</option>
+            </select>
+        </div>
+        <div id="image">
+
+        </div>
+    </div>
+    <script>
+        var image = document.getElementById("image");
+        
+        var imgList = {
+            "none": "img/icons8-medium-icons-100.png",
+            "gambar1": "img/icons8-crab-100.png",
+            "gambar2": "img/icons8-black-cat-100.png",
+            "gambar3": "img/icons8-chicken-100.png",
+            "gambar4": "img/icons8-bear-100.png",
+            "gambar5": "img/icons8-elephant-100.png",
+            "gambar6": "img/icons8-gorilla-100.png",
+            "gambar7": "img/icons8-kawaii-dinosaur-100.png",
+            "gambar8": "img/icons8-lion-100.png",
+            "gambar9": "img/icons8-panda-100.png",
+        }
+
+        function change(){
+            let imgValue = document.getElementById("img-picker").value;
+            
+            console.log(imgList[imgValue])
+
+            let imgUrl = "url("+ imgList[imgValue]+")"
+
+            image.style.backgroundImage = imgUrl;
+        }
+    </script>
+</body>
+
+</html>
