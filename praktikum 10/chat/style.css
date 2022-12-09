@@ -10,15 +10,22 @@
     box-sizing: border-box;
 }
 
+.empty {
+    height: 55px;
+}
+
 /* chat start */
 .chat {
     background-color: #edfeeb;
-    height: 90vh;
+    position: relative;
+    min-height: 90vh;
+    bottom: 55px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
-    z-index: 1;
+    z-index: -1;
+    overflow: auto;
 }
 
 .chat div {
