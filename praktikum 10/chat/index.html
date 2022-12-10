@@ -10,41 +10,54 @@
 
 <body>
     <div class="container">
-        <div class="empty"></div>
-        <div class="chat" id="msg-area">
-
+        <div class="msgcontainer">
+        <div class="chat" id="msg-area"></div>
         </div>
 
         <div class="message">
             <input placeholder="Ketik pesan" autofocus type="text" class="inp" id="inp-chat">
-            <button onclick="chat(),document.getElementById('inp-chat').focus()">Kirim</button>
+            <button id="send-but">Kirim</button>
         </div>
     </div>
 
     <script>
-        function chat() {
-            let chat_inp = document.getElementById("inp-chat").value;
-            if (chat_inp != "") {
-                
+        var input = document.getElementById("inp-chat");
+        var button = document.getElementById("send-but");
+
+        input.addEventListener("keydown",
+            function (e) {
+                if (e.code == "Enter") {
+                    validate()
+                }
+            })
+
+        function validate() {
+            var text = document.getElementById("inp-chat").value;
+            if (text != "") {
+                var chat_item = document.createElement("div");
+                chat_item.innerHTML = text;
+                chat_item.className = "user"
+
                 var time = new Date();
                 let minutes = time.getMinutes();
                 let hours = time.getHours();
-                
                 var date_label = document.createElement("span");
                 date_label.innerHTML = hours+":"+minutes;
-                
-                var element = document.createElement("div");
-                
-                let text = document.createTextNode(chat_inp);
-                
-                element.appendChild(text);
-                element.appendChild(date_label);
+                chat_item.appendChild(date_label);
+
                 msgBox = document.getElementById("msg-area");
-                msgBox.appendChild(element);
+                msgBox.appendChild(chat_item);
+                msgBox.scrollTo(0,msgBox.scrollHeight)
 
                 document.getElementById("inp-chat").value = "";
             }
         }
+
+        button.onclick = function(){
+            document.getElementById("inp-chat").focus();
+            validate();
+        };
+
     </script>
 </body>
 

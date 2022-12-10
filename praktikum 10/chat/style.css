@@ -1,8 +1,10 @@
 :root {
     --shadow: rgb(169, 169, 169);
     --transsadow: rgba(128, 128, 128, 0.418);
-    --accent: hwb(111deg 82% 2%);
-    --gradient: radial-gradient(#d7fda1, #62c291 100%);
+    --accent: #d7fad1;
+    --bgc: #edfeeb;
+    --darkaccent: #62c291;
+    --gradient: linear-gradient(to bottom right, #d7fda1 0%, #62c291 30%);
 }
 
 * {
@@ -10,25 +12,25 @@
     box-sizing: border-box;
 }
 
-.empty {
-    height: 55px;
-}
-
-/* chat start */
-.chat {
-    background-color: #edfeeb;
-    position: relative;
-    min-height: 90vh;
-    bottom: 55px;
+/* chat area start*/
+.msgcontainer {
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: flex-end;
-    z-index: -1;
-    overflow: auto;
+    background-color: var(--bgc);
 }
 
-.chat div {
+.chat {
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: auto;
+}
+
+.chat div.user {
     background-color: var(--accent);
     padding: 5px;
     margin: 10px;
@@ -47,9 +49,9 @@
     right: 2px;
 }
 
-/* chat end */
+/* chat area end */
 
-/* message */
+/* message input start */
 .message {
     background-color: var(--accent);
     background-image: var(--gradient);
@@ -66,20 +68,40 @@
     width: 100%;
     padding: 10px;
     border: 0;
+    border-radius: 10px 10px 10px 10px;
 }
 
-/* message end */
-
-::-webkit-scrollbar {
-    width: 10px;
+.message button {
+    min-width: 10%;
+    width: 80px;
+    margin-left: 3px;
+    border-radius: 10px 10px;
+    background-color: #62c291;
+    color: white;
+    border: solid;
 }
 
-::-webkit-scrollbar-track {
+.message button:hover {
+    color: #62c291;
+    background-color: white;
+    border: solid;
+}
+
+/* message input end */
+
+/* scroll start */
+.chat::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat::-webkit-scrollbar-track {
     background: rgb(221, 221, 221);
 }
 
-::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(#62c291 20%, #d7fda1 50%, #62c291 80%);
+.chat::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#62c291 20%, #6bf450 50%, #62c291 80%);
     border-radius: 5px;
     box-shadow: 1px 2px grey;
 }
+
+/* scroll end */
