@@ -11,9 +11,9 @@
 
 <body>
     <div class="container">
-        <form name="writes" onsubmit="return validateTicket(this);">
+        <form name="writes" onsubmit="return createNew(this);">
             <fieldset>
-                <h4>Cek Validasi Tiket</h4>
+                <h4>Buat Tiket Baru</h4>
                 <div>
                     <label for="nama">Nama Pelanggan:</label>
                     <br>
@@ -39,9 +39,8 @@
                     <br>
                     <input required type="number" name="" id="jumlah" max="10" min="1">
                 </div>
-                <button>Cek Validasi Tiket</button>
+                <button type="submit">Buat Tiket Baru</button>
                 <br>
-                <span class="new-tckt">Belum punya tiket? <br> buat tiket baru <a href="create_new.html">di sini</a></span>
             </fieldset>
         </form>
 
@@ -74,7 +73,6 @@
                     <br>
                     <input readonly type="number" name="" id="tiket-tiket">
                 </div>
-                <br>
             </fieldset>
         </div>
     </div>
