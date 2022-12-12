@@ -1,89 +1,146 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --background-gradient: radial-gradient(circle at bottom left, lightblue 20%, magenta);
+    --button-gradient: linear-gradient(to left, rgb(170, 0, 255) 20%, magenta);
+    --button-gradient-hover: linear-gradient(to left, #6b09e2 20%, #ae10c0);
+    --button-gradient-active: linear-gradient(to left, #d1e5ff 20%, #dea2ff);
 }
-.container{
-    display: flex;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: var(--background-gradient);
+}
+::selection{
+    color: red;
+    background-color: #519cff;
+}
+.container {
+    display: block;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 500px;
 }
 
-input,label{
+/* cursor */
+input,
+label {
     cursor: pointer;
 }
 
-form div{
+/* form start */
+h2{
+    background-image: var(--button-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: solid;
+    border-image: var(--button-gradient)1;
+}
+form {
+    margin: auto;
+    width: fit-content;width: 80%;
+    max-width: 400px;
+}
+
+form div {
     margin: 5px;
-    width: fit-content;
     border-bottom: 2px solid;
 }
-form fieldset{
-    width: fit-content;
+
+form fieldset {
+    margin:auto;
+    padding: 30px;
+    max-width: 300px;
+    background-color: white;
     border: white 3px solid;
-    background-color: lightcyan;
+    border-radius: 10px;
     box-shadow: 8px 8px lavender;
 }
-form legend{
+
+form legend {
     background-color: yellowgreen;
     padding: 2px;
 }
-form input{
+
+form input {
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
     background-color: white;
-    border: none;
-}
-input:-webkit-autofill{
-    background-color: rebeccapurple;
-    -webkit-background-fill-color: aqua;
-
+    background-image: ;
+    border: lightblue solid 1px;
+    border-radius: 3px;
 }
 
-.new-tckt{
+/* form end */
+
+
+/* new ticket start */
+.new-tckt {
     font-size: smaller;
 }
 
 
-#result{
+#result {
     display: none;
 }
-#result fieldset{
+
+#result fieldset {
+    margin: 40px auto;
     width: fit-content;
     border: dashed 5px white;
     background-color: antiquewhite;
+    background-image: linear-gradient(white,white);
+    -webkit-background-clip: padding-box;
+    border-image: varbg;
 }
-#result legend{
-    background-color: yellowgreen;
-    color: white;
-    border: dashed 3px ;
+
+#result legend {
+    color: black;
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
 }
-#result div{
+
+#result div {
     margin: 8px;
     width: fit-content;
 }
-#result label{
+
+#result label {
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
     border-bottom: solid black;
     color: gray;
 }
-#result input{
+
+#result input {
     background-color: transparent;
     border: none;
     font-weight: 600;
     font-size: 14px;
 }
 
-button{
-    background-color: white;
-    color: slateblue;
+/* new ticket end */
+
+button {
+    background-image: var(--button-gradient);
+    color: white;
     border: solid;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
 }
-button:hover{
-    background-color: slateblue;
+
+button:hover {
+    background-image: var(--button-gradient-hover);
     color: white;
     border: solid slateblue;
 }
-button:active{
-    background-color: white;
-    color: slateblue;
+
+button:active {
+    background-image: var(--button-gradient-active);
+    color: #6b09e2;
+    border: solid #519cff;
+    background-clip: text;
     border: solid;
+    transition: 0s;
 }

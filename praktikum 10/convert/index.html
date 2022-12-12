@@ -5,11 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<form action="">
-		<legend>kurs</legend>
+		<div class="h">
+			<h3>Money Converter</h3>
+		</div>
+		<div class="tali"></div>
 		<table>
 			<tr>
 				<td>Nilai awal</td>
@@ -36,7 +40,7 @@
 			let nilaiakhir = document.getElementById("nilai-akhir").value;
 			let mataUang = document.getElementById("matauang").value;
 			let hasil;
-	
+
 			if (mataUang == "usd") {
 				hasil = nilaiAwal * 13000;
 			}
