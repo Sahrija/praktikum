@@ -35,6 +35,6 @@ td+td{
     left: 25px;
     top: 0;
     background-color: antiquewhite;
-    background-image: linear-gradient(antiquewhite 147px, rgb(236, 166, 106) 147px);
+    background-image: linear-gradient(antiquewhite 147px, #eca66a 147px);
     z-index: auto;
 }
