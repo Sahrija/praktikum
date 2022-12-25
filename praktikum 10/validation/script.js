@@ -13,6 +13,8 @@ function validateTicket(form) {
         document.getElementById("tiket-tiket").value = jumlah;
         parent = document.getElementById("result");
         parent.style.display = "block";
+
+        window.scrollTo(0,1000);
     }
     else {
         alert("data didn't match!")
@@ -40,5 +42,6 @@ function createNew(form) {
     parent = document.getElementById("result");
     parent.style.display = "block";
 
+    window.scrollTo(0,1000);
     return false;
 }

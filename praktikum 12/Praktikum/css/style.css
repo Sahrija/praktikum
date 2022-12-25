@@ -1,0 +1,78 @@
+body {
+    background-color: aliceblue;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler{
+    color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    transition: 0.5s;
+    position: inherit;
+    background-color: black;
+    -webkit-text-fill-color: white;
+    color: white;
+}
+
+.navbar * {
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    width: fit-content;
+    transition: 0.5s;
+}
+
+.navbar-collapse {
+    width: fit-content;
+    position: inherit;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar-collapse .dropdown-menu {
+    color: whi;
+    -webkit-text-fill-color: black;
+}
+
+.dropdown a::after {
+    color: gray;
+}
+
+/* space */
+
+.card{
+    margin-bottom: 20px;
+}
+
+/* for wide screen */
+@media only screen and (min-width:940px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: absolute;
+        right: 0;
+
+    }
+
+    .navbar-collapse ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .collapse.show {
+        display: flex;
+    }
+
+}

@@ -4,6 +4,9 @@
     --button-gradient-hover: linear-gradient(to left, #6b09e2 20%, #ae10c0);
     --button-gradient-active: linear-gradient(to left, #d1e5ff 20%, #dea2ff);
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: var(--background-gradient);
@@ -63,7 +66,6 @@ form input {
     margin: 5px 0;
     width: 100%;
     background-color: white;
-    background-image: ;
     border: lightblue solid 1px;
     border-radius: 3px;
 }
