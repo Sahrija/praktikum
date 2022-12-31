@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Testing</title>
+    <style>
+        div{
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .bleeding{
+            box-shadow: 0 0 0 100vmax var(--bg-col);
+            clip-path: inset(0 -100vmax);
+        }
+
+        .inverse{
+            --bg-col:rgb(32, 35, 39);
+            background-color: var(--bg-col);
+            color: white;
+        }
+        .highlight{
+            color: cadetblue;
+        }
+        @media (prefers-color-scheme: dark){
+            .highlight{
+                color: chartreuse;
+            }
+            *{
+                /* outline: 1px solid lightblue; */
+                /* background-color: rgba(240, 248, 255, 0.086); */
+            }
+            body{
+                font-family: system-ui;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur praesentium atque, ea unde esse obcaecati dolores suscipit nobis reiciendis ratione reprehenderit sit possimus accusantium totam impedit perspiciatis doloremque itaque maxime.</p>
+    </div>
+    <div class="inverse bleeding">
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, sit.</h3>
+        <p>Eveniet, <span class="highlight">commodi debitis! Incidunt</span> vero officiis deserunt id voluptates, tempora quisquam magnam recusandae vitae! Expedita quos fuga ex dolores ipsa ad facere, laborum itaque a dolor et veniam ducimus eos?</p>
+    </div>
+    <div>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Eaque perferendis at voluptates optio natus aliquid. Inventore odio voluptas amet quod voluptates doloremque reiciendis dicta soluta earum facere id ipsam numquam molestias, consectetur cum consequatur iste rerum veritatis sint!</p>
+    </div>
+</body>
+</html>
